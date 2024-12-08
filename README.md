@@ -18,6 +18,8 @@ A simple blog written in PHP without any database connection. It uses a straight
   │   ├── article2.html
   │   └── ...
   ├── /css               # Folder for CSS files
-  │   └── jkfinal-styles.css     # Contains your custom styles
+  │   └── jkfinal01-styles.css     # Contains your custom styles
   ├── /images            # Optional folder for images
+  ├── subscribers.txt
+  ├── subscribe.php
 ```
