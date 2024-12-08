@@ -1,6 +1,6 @@
 # JagoronKendro-blog
 
-A simple blog written in PHP without any database connection. It uses a straightforward file-based structure to manage content. Articles are stored as individual files in the `/articles` folder, while an `XML` file (`feed.xml`) contains metadata about the posts. The blog dynamically displays content through PHP scripts, ensuring an easy-to-maintain system.
+A simple blog written in PHP without any database connection. It uses a straightforward file-based structure to manage content. Articles are stored as individual files in the `/articles` folder, while an `XML` file (`feed.xml`) contains metadata about the posts.
 
 
 
