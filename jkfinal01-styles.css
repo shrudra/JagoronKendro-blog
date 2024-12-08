@@ -1,0 +1,253 @@
+/* Reset */
+body, h1, h2, p, ul, ol, li, a {
+    font-family: 'Noto Serif Bengali', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+.header {
+    background-color: #d1001f; /* Red header for communist theme */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.header .symbol {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+/* Articles Section */
+.main-content {
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-content ul li {
+    background: #FFFFFF;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-content ul li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.main-content ul li h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.main-content ul li h3 a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #000000;
+}
+
+.main-content ul li h3 a:hover {
+    color: #000000;
+}
+
+.main-content ul li p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.author {
+            font-size: 1em;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+/* Subscribe Section */
+form {
+    margin: 20px 0;
+}
+
+form input[type="email"] {
+    padding: 8px;
+    font-size: 1rem;
+    width: calc(100% - 100px);
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    background-color: #d1001f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #e74c3c;
+}
+
+ .author-box {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            padding: 15px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .author-box img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .author-box .author-info {
+            font-size: 14px;
+        }
+        .author-box .author-info h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #34495e;
+        }
+        .author-box .author-info p {
+            margin: 5px 0 0;
+            color: #7f8c8d;
+        }
+
+/* Social Links Container */
+.social-links {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f9fa; /* Light gray background for contrast */
+    border-top: 2px solid #d1001f; /* Red top border for branding */
+}
+
+/* Individual Links */
+.social-links a {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 2rem; /* Icon size */
+    color: #333; /* Neutral color for default state */
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Facebook */
+.social-links .fab.fa-facebook {
+    color: #1877f2; /* Facebook Blue */
+}
+
+/* WhatsApp */
+.social-links .fab.fa-whatsapp {
+    color: #25D366; /* WhatsApp Green */
+}
+
+/* LinkedIn */
+.social-links .fab.fa-linkedin {
+    color: #0077b5; /* LinkedIn Blue */
+}
+
+/* Email */
+.social-links .fa.fa-envelope {
+    color: #f4bc1c; /* Envelope Yellow */
+}
+
+/* Hover Effect */
+.social-links a:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon */
+    color: #e74c3c; /* Bright red on hover for all icons */
+}
+
+/* Accessible Focus State */
+.social-links a:focus {
+    outline: 2px solid #e74c3c; /* Red focus outline for keyboard users */
+    outline-offset: 4px;
+}
+
+/* Optional: Label Styling for Accessibility */
+.social-links a span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+
+/* Footer */
+.footer {
+    background-color: #d1001f;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #FFFFFF;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
