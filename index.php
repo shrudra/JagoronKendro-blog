@@ -32,7 +32,7 @@ $xml = simplexml_load_file('feed.xml') or die('Error: Cannot load feed');
                     <img src="<?= htmlspecialchars($article->image) ?>" alt="<?= htmlspecialchars($article->title) ?>">
                 <?php endif; ?>
                 <h3>
-                    <a href="article.php?file=<?= urlencode($article->file) ?>">
+                    <a href="article?file=<?= urlencode($article->file) ?>">
                         <?= htmlspecialchars($article->title) ?>
                     </a>
                 </h3>
