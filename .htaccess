@@ -1,20 +1,24 @@
 RewriteEngine on
-ErrorDocument 404   http://localhost/JagoronKendro-blog/404.html
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
+# Custom 404 error page
+ErrorDocument 404 http://localhost/JagoronKendro-blog/404.html
 
-# Block access to the subscribers.txt file
+# Remove .php extension from URLs
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^/]+)$ $1.php [L]
+
+# Block access to the 'subscribers.txt' file
 <Files "subscribers.txt">
     Order Allow,Deny
     Deny from all
 </Files>
 
-# Deny all direct access to files in this folder
-<FilesMatch ".*">
-  Order Allow,Deny
-  Deny from all
-</FilesMatch>
+
+# Block access to files in the 'archive' folders (recursive)
+<DirectoryMatch "^/archive/.*">
+    Order Allow,Deny
+    Deny from all
+</DirectoryMatch>
 
 # Allow access from the server (e.g., via PHP scripts)
 <FilesMatch "\.php$">
