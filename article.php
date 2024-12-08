@@ -1,11 +1,20 @@
 <?php
+// Get the file parameter
 $file = $_GET['file'] ?? null;
 
-if (strpos($file, '..') !== false || !file_exists($file)) {
-    die('Error: Invalid file');
+// Ensure the file exists and is inside the 'articles' directory
+$directory = 'articles/';
+$filePath = $directory . basename($file); // Get the filename without path traversal
+
+// Check if the file exists, is a valid HTML file, and is within the 'articles' folder
+if (!file_exists($filePath) || strpos(realpath($filePath), realpath($directory)) !== 0 || pathinfo($filePath, PATHINFO_EXTENSION) !== 'html') {
+    // Redirect to the custom 404 page
+    header("Location: https://jagoronkendro.org/404.html");
+    exit();
 }
 
-$content = file_get_contents($file);
+// Read the content of the file
+$content = file_get_contents($filePath);
 ?>
 <!DOCTYPE html>
 <html lang="bn">
