@@ -3,6 +3,8 @@ ErrorDocument 404   http://localhost/JagoronKendro-blog/404.html
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
+
+# Block access to the subscribers.txt file
 <Files "subscribers.txt">
     Order Allow,Deny
     Deny from all
