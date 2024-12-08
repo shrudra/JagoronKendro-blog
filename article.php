@@ -7,7 +7,7 @@ $directory = 'articles/';
 $filePath = $directory . basename($file); // Get the filename without path traversal
 
 // Check if the file exists, is a valid HTML file, and is within the 'articles' folder
-if (!file_exists($filePath) || strpos(realpath($filePath), realpath($directory)) !== 0 || pathinfo($filePath, PATHINFO_EXTENSION) !== 'html') {
+if (!file_exists($filePath) || strpos(realpath($filePath), realpath($directory)) !== 0 || pathinfo($filePath, PATHINFO_EXTENSION) !== 'php') {
     // Redirect to the custom 404 page
     header("Location: https://jagoronkendro.org/404.html");
     exit();
