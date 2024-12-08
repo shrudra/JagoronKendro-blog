@@ -9,3 +9,15 @@ RewriteRule ^([^\.]+)$ $1.php [NC,L]
     Order Allow,Deny
     Deny from all
 </Files>
+
+# Deny all direct access to files in this folder
+<FilesMatch ".*">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+# Allow access from the server (e.g., via PHP scripts)
+<FilesMatch "\.php$">
+  Allow from localhost
+</FilesMatch>
+
