@@ -36,7 +36,7 @@ $xml = simplexml_load_file('feed.xml') or die('Error: Cannot load feed');
                         <?= htmlspecialchars($article->title) ?>
                     </a>
                 </h3>
-                <p><small>লেখা প্রকাশের তারিখ <?= htmlspecialchars($article->date) ?></small></p>
+                <p><small> <?= htmlspecialchars($article->date) ?></small></p>
                 <p><?= htmlspecialchars($article->summary) ?></p>
             </li>
         <?php endforeach; ?>
