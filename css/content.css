@@ -1,0 +1,80 @@
+blockquote {
+    font-style: italic;
+    color: #555;
+    padding: 10px 20px;
+    background: #f9f9f9;
+    border-left: 4px solid #d1001f;
+    margin: 20px 0;
+    }
+    
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    }
+    
+    table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    }
+    
+    table th {
+    background-color: #d1001f;
+    color: white;
+    }
+    
+    
+    .action-buttons {
+    margin-top: 20px;
+    }
+    
+    .action-buttons button {
+    background: #d1001f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+    }
+    
+    .action-buttons button i {
+    margin-right: 8px;
+    }
+    
+    .action-buttons button:hover {
+    background: #e74c3c;
+    }
+  /* Feedback Box */
+        form {
+            margin-top: 30px;
+        }
+  
+        form input[type="text"], form input[type="email"] {
+            padding: 10px;
+            font-size: 1rem;
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+  
+        form button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #d1001f;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+  
+        form button:hover {
+            background-color: #e74c3c;
+        }
+    
