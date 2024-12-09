@@ -18,7 +18,8 @@ A simple blog written in PHP without any database connection. It uses a straight
   │   ├── article2.php   # PHP file for the second article.
   │   └── ...            # Additional article files in PHP format.
   ├── /css               # Directory for storing CSS files related to the website's styling.
-  │   └── jkfinal01-styles.css     # Custom stylesheet containing the design and layout for the blog.
+  │   └── jkfinal01-styles.css
+  │   └── content.css     # Custom stylesheet containing the design and layout for the blog.
   ├── /images            # Optional directory to store image assets used throughout the blog.
   ├── subscribers.txt    # Text file used to store subscriber information, likely email addresses.
   ├── subscribe.php      # PHP script handling new subscriber registrations or form submissions.
